@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Undangan Pernikahan - Ahmad & Siti</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="cover" id="cover">
+    <div class="cover-bg"></div>
+    <div class="cover-content">
+      <p class="cover-invited">You are invited to the wedding of</p>
+      <h1 class="cover-name">Ahmad & Siti</h1>
+      <p class="cover-to-label">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+      <p class="cover-to-name" id="tamuNama">Tamu Undangan</p>
+      <p class="cover-note">Mohon maaf apabila ada kesalahan penulisan nama dan gelar</p>
+      <button class="btn-open" onclick="bukaUndangan()">OPEN INVITATION</button>
+    </div>
+  </div>
+
+  <div class="slides-wrapper" id="slidesWrapper">
+
+    <section class="slide active" data-slide="0">
+      <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1000')">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+          <p class="slide-sub anim-up">THE WEDDING CEREMONY OF</p>
+          <h2 class="slide-title anim-up">Ahmad & Siti</h2>
+          <p class="slide-date anim-up">SABTU, 20 DESEMBER 2026</p>
+          <div class="countdown anim-up">
+            <div class="cd-box"><span id="days">0</span><small>hari</small></div>
+            <div class="cd-box"><span id="hours">0</span><small>jam</small></div>
+            <div class="cd-box"><span id="minutes">0</span><small>menit</small></div>
+            <div class="cd-box"><span id="seconds">0</span><small>detik</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-slide="1">
+      <div class="slide-bg dark-bg">
+        <div class="slide-content center-flex">
+          <p class="arabic anim-up">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+          <p class="opening-text anim-up">Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, insyaaAllah kami akan menyelenggarakan acara pernikahan :</p>
+          <div class="foto-oval anim-left">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600" alt="Pria" />
+          </div>
+          <p class="nama-script anim-left">Ahmad</p>
+          <h3 class="mempelai-nama anim-left">Ahmad Fauzi, S.Kom.</h3>
+          <p class="mempelai-ortu anim-left">Putra Pertama dari<br>Bapak Abdullah & Ibu Aisyah</p>
+          <p class="dan-script anim-up">&</p>
+          <div class="foto-oval anim-right">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600" alt="Wanita" />
+          </div>
+          <p class="nama-script anim-right">Siti</p>
+          <h3 class="mempelai-nama anim-right">Siti Nurhaliza, S.E.</h3>
+          <p class="mempelai-ortu anim-right">Putri Kedua dari<br>Bapak Muhammad & Ibu Khadijah</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-slide="2">
+      <div class="slide-bg dark-bg">
+        <div class="slide-content">
+          <p class="script-title anim-up">Save The Date</p>
+          <p class="opening-text anim-up">Kami akan menikah, dan kami ingin Anda menjadi bagian dari hari istimewa kami</p>
+          <div class="foto-arch-big anim-up">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600" alt="Pasangan" />
+          </div>
+          <div class="acara-card-dark anim-right">
+            <h4>Akad Nikah</h4>
+            <p class="acara-tgl">Sabtu, 20 Desember 2026</p>
+            <p class="acara-jam">08.00 WIB</p>
+            <p class="acara-lokasi">Kediaman Mempelai Wanita<br>Jl. Contoh No. 123, Yogyakarta</p>
+          </div>
+          <div class="acara-card-dark anim-left">
+            <h4>Resepsi</h4>
+            <p class="acara-tgl">Sabtu, 20 Desember 2026</p>
+            <p class="acara-jam">11.00 - 14.00 WIB</p>
+            <p class="acara-lokasi">Gedung Serbaguna<br>Jl. Contoh No. 456, Yogyakarta</p>
+          </div>
+          <a href="https://maps.google.com" target="_blank" class="btn-maps-dark anim-up">Lihat Lokasi</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-slide="3">
+      <div class="slide-bg dark-bg">
+        <div class="slide-content">
+          <p class="script-title anim-up">Our Story</p>
+          <div class="story-card anim-right">
+            <h4 class="story-title">Awal Pertemuan</h4>
+            <p class="story-date">Mei 2023</p>
+            <p class="story-text">Ternyata benar, pertemuan pertama itu menumbuhkan rasa penasaran, sedang pertemuan kedua menumbuhkan rasa rindu, dan pertemuan selanjutnya hanya meninggalkan rasa candu.</p>
+          </div>
+          <div class="story-card anim-left">
+            <h4 class="story-title">Lamaran</h4>
+            <p class="story-date">Mei 2025</p>
+            <p class="story-text">Dengan niat dan restu orang tua, melakukan acara lamaran untuk menjadi pasangan until jannah. Aamiin.</p>
+          </div>
+          <p class="script-title anim-up">Gallery Prewedding</p>
+          <div class="galeri-grid anim-up">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400" alt="1" />
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400" alt="2" />
+            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=400" alt="3" />
+            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=400" alt="4" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-slide="4">
+      <div class="slide-bg cream-bg">
+        <div class="slide-content">
+          <p class="script-title-dark anim-up">Wedding Gift</p>
+          <p class="opening-text-dark anim-up">Jika memberi adalah tanda kasih anda, anda dapat memberikan hadiah secara cashless ke rekening mempelai</p>
+          <div class="bank-card anim-right">
+            <div class="bank-logo">BANK BRI</div>
+            <div class="bank-body">
+              <p class="bank-nama">AHMAD FAUZI</p>
+              <p class="bank-norek">1234567890</p>
+              <button class="btn-copy-dark" onclick="copyRekening('1234567890')">Salin Rekening</button>
+            </div>
+          </div>
+          <div class="bank-card anim-left">
+            <div class="bank-logo">BSI</div>
+            <div class="bank-body">
+              <p class="bank-nama">SITI NURHALIZA</p>
+              <p class="bank-norek">0987654321</p>
+              <button class="btn-copy-dark" onclick="copyRekening('0987654321')">Salin Rekening</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-slide="5">
+      <div class="slide-bg dark-bg">
+        <div class="slide-content">
+          <p class="script-title-white anim-up">Kirimkan Ucapan Dan Doa Restu Untuk Kami</p>
+          <div class="rsvp-box anim-up">
+            <div class="rsvp-header">
+              <h4 id="totalComments">0 Comments</h4>
+              <div class="rsvp-stats" id="rsvpStats" style="display:none;">
+                <div class="stat hadir"><span id="totalHadir">0</span><small>Hadir</small></div>
+                <div class="stat tidak"><span id="totalTidak">0</span><small>Tidak Hadir</small></div>
+              </div>
+            </div>
+            <form class="form-rsvp" onsubmit="kirimUcapan(event)">
+              <input type="text" id="nama" placeholder="Nama" required />
+              <textarea id="ucapan" placeholder="Ucapan" required></textarea>
+              <select id="konfirmasi" required>
+                <option value="">Konfirmasi Kehadiran</option>
+                <option value="hadir">Hadir</option>
+                <option value="tidak">Tidak Hadir</option>
+              </select>
+              <button type="submit" class="btn-kirim-dark">Kirim</button>
+            </form>
+            <div id="daftarUcapan" class="daftar-ucapan"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-slide="6">
+      <div class="slide-bg" style="background-image:url('https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=1000')">
+        <div class="slide-overlay"></div>
+        <div class="slide-content center-flex">
+          <div class="penutup-box anim-up">
+            <p class="opening-text-light">Atas kehadiran dan do'a restu dari Bapak/Ibu/Saudara/i sekalian, kami mengucapkan</p>
+            <p class="terima-kasih-script">Terima Kasih</p>
+          </div>
+          <p class="join-text anim-up">JOIN OUR WEDDING</p>
+          <h2 class="slide-title anim-up">Ahmad & Siti</h2>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <nav class="bottom-nav" id="bottomNav">
+    <button onclick="goToSlide(0)" class="nav-btn active" data-nav="0" aria-label="Home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    </button>
+    <button onclick="goToSlide(1)" class="nav-btn" data-nav="1" aria-label="Mempelai">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+    </button>
+    <button onclick="goToSlide(2)" class="nav-btn" data-nav="2" aria-label="Acara">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/></svg>
+    </button>
+    <button onclick="goToSlide(3)" class="nav-btn" data-nav="3" aria-label="Galeri">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+    </button>
+    <button onclick="goToSlide(4)" class="nav-btn" data-nav="4" aria-label="Kado">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+    </button>
+    <button onclick="goToSlide(5)" class="nav-btn" data-nav="5" aria-label="Ucapan">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    </button>
+  </nav>
+
+  <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20mau%20konfirmasi%20kehadiran" class="wa-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" />
+  </a>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=wedding-114782.mp3" type="audio/mpeg" />
+  </audio>
+  <button class="music-btn" id="musicBtn" onclick="toggleMusic()">🎵</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
