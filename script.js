@@ -93,10 +93,8 @@ function copyRekening(norek) {
   }).catch(() => alert("Nomor rekening: " + norek));
 }
 
-let daftarUcapanData = [
-  { nama: "Budi Santoso", isi: "Selamat menempuh hidup baru! Semoga menjadi keluarga sakinah, mawaddah, warahmah.", konfirmasi: "hadir", waktu: "Baru saja" },
-  { nama: "Rina & Keluarga", isi: "Barakallahu lakuma wa baraka alaikuma wa jama'a bainakuma fii khair. Selamat ya!", konfirmasi: "tidak", waktu: "5 menit lalu" }
-];
+// ===== DATA KOSONG (SIAP JUALAN) =====
+let daftarUcapanData = [];
 
 function renderUcapan() {
   const el = document.getElementById("daftarUcapan");
