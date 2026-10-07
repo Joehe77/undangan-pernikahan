@@ -9,14 +9,16 @@ body {
   width: 100vw;
 }
 
-/* ===== BUNGA BERGRAK ===== */
+/* ===== BUNGA BERGRAK (GAMBAR PNG) ===== */
 .flower-decor {
   position: fixed;
-  font-size: 2rem;
+  width: 50px;
+  height: 50px;
   z-index: 9996;
   pointer-events: none;
-  opacity: 0.7;
-  filter: drop-shadow(0 0 10px rgba(255, 182, 193, 0.5));
+  opacity: 0.75;
+  filter: drop-shadow(0 0 8px rgba(255, 182, 193, 0.6));
+  object-fit: contain;
 }
 
 .flower-left-1 { top: 15%; left: 10px; animation: floatFlowerLeft 4s ease-in-out infinite; }
@@ -123,7 +125,7 @@ body {
 }
 .btn-open:active { transform: scale(0.95); }
 
-/* ===== SLIDES (TRANSISI 1.3s) ===== */
+/* ===== SLIDES ===== */
 .slides-wrapper { position: fixed; inset: 0; overflow: hidden; z-index: 1; }
 
 .slide {
@@ -342,4 +344,4 @@ body {
 @keyframes rotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-  }
+}
